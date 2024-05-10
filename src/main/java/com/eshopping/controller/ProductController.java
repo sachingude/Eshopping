@@ -22,6 +22,8 @@ public class ProductController {
 	@GetMapping("/getDemo")
 	public String getDemo()
 	{
+		System.out.println("welcome to java");
+		
 		return "welcome to spring boot";
 	}
 
