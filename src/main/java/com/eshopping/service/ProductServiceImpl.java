@@ -23,6 +23,7 @@ public class ProductServiceImpl implements ProductService {
 		ProductData.setProductName(productDto.getProductName());
 		ProductData.setProductQty(productDto.getProductQty());
 		ProductData.setPrice(productDto.getPrice());
+		System.out.println("Save products");
 		return productRepository.save(ProductData);
 
 	}
@@ -31,6 +32,7 @@ public class ProductServiceImpl implements ProductService {
 	public List<Product> getProductDetails() {
 		
 		List<Product> getProductData=productRepository.findAll();
+		System.out.println("Get the product details products");
 		return getProductData;
 	}
 
