@@ -36,4 +36,9 @@ public class ProductServiceImpl implements ProductService {
 		return getProductData;
 	}
 
+
+	public void addedMethod()
+	{
+		System.out.println("New Method added");
+	}	
 }
